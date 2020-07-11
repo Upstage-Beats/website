@@ -1,0 +1,43 @@
+---
+label: Import Template
+hide_body: true
+fields:
+- type: number
+  name: mp3-price
+  label: mp3-price
+- type: number
+  name: wav-price
+  label: wav-price
+- type: textarea
+  name: sample-embed
+  label: sample-embed
+- type: text
+  name: mp3-name
+  label: mp3-name
+- type: text
+  name: mp3-description
+  label: mp3-description
+- type: text
+  name: mp3-id
+  label: mp3-id
+- type: text
+  name: mp3-url
+  label: mp3-url
+- type: datetime
+  name: mp3-guid
+  label: mp3-guid
+- type: text
+  name: wav-id
+  label: wav-id
+- type: text
+  name: wav-url
+  label: wav-url
+- type: text
+  name: wav-description
+  label: wav-description
+- type: text
+  name: wav-name
+  label: wav-name
+- type: datetime
+  name: wav-guid
+  label: wav-guid
