@@ -1,0 +1,55 @@
+---
+layout: default
+title: Home
+---
+
+<main>
+
+  <h1> Test </h1>
+
+<section class="track-container">
+  <h2>Currently Available Beats</h2>
+
+  {% for post in site.posts %}
+
+  <div class="track-row">
+
+    {{ post.sample-embed}}
+
+    <div></div>
+
+    <div>
+      <button class="snipcart-add-item"
+          data-item-id="{{ post.mp3-id}}"
+          data-item-price="{{ post.mp3-price}}"
+          data-item-url="/"
+          data-item-description="{{ post.mp3-description}}"
+          data-item-name="{{ post.mp3-name}}"
+          data-item-file-guid="{{ post.mp3-guid}}"
+          data-item-max-quantity="1"
+          >
+          Buy .mp3
+        </button>
+      <button class="snipcart-add-item"
+          data-item-id="{{ post.wav-id}}"
+          data-item-price="{{ post.wav-price}}"
+          data-item-url="/"
+          data-item-description="{{ post.wav-description}}"
+          data-item-name="{{ post.wav-name}}"
+          data-item-file-guid="{{ post.wav-guid}}"
+          data-item-max-quantity="1"
+          >
+          Buy .wav
+        </button>
+    </div>
+
+  </div>
+
+  {% endfor %}
+</section>
+
+
+
+
+
+</main>

@@ -1,0 +1,10 @@
+title: "Numerow"
+baseurl: ""
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+permalink: "/:categories/:year/:month/:day/:title:output_ext"
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed

@@ -1,0 +1,6 @@
+Update <Head> descriptions etc.
+
+Robots
+
+
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.16/default/snipcart.css">

@@ -1,0 +1,35 @@
+<header class="dropdown">
+
+    <div class="dropdown-top">
+        <a href="index.html">
+            <h2>Numerow</h2>
+        </a>
+        <h2 class="toggler"></h2>
+    </div>
+
+    <div class="panel">
+      {% assign links = site.pages | sort: "order" %}
+          {% for link in links %}
+            {% if link.order %}
+              <a href="{{ link.url | absolute_url }}"
+                 class="{% if link.url  == page.url %}active{% endif %}">
+                 {{ link.title }}
+              </a>
+            {% endif %}
+          {% endfor %}
+    </div>
+
+</header>
+
+<header class="full-width">
+<div class="logo-container"><img src="/images/logo.png"></div>
+<div><h1>Hi-Fi Recordings</h1></div>
+<div><h1>Exclusive Licensing Available</h1></div>
+<div><h1>For Artists, by Artists</h1></div>
+<div class="split-buttons">
+    <button><a>Info</a></button>
+    <button><a>Inquiries</a></button>
+  </div>
+
+
+</header>
