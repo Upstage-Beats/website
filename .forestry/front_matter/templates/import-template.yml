@@ -17,27 +17,31 @@ fields:
 - type: text
   name: mp3-description
   label: mp3-description
+- name: mp3-guid
+  type: text
+  config:
+    required: false
+  label: mp3-guid
 - type: text
   name: mp3-id
   label: mp3-id
 - type: text
   name: mp3-url
   label: mp3-url
-- type: datetime
-  name: mp3-guid
-  label: mp3-guid
 - type: text
   name: wav-id
   label: wav-id
 - type: text
   name: wav-url
   label: wav-url
+- name: wav-guid
+  type: text
+  config:
+    required: false
+  label: wav-guid
 - type: text
   name: wav-description
   label: wav-description
 - type: text
   name: wav-name
   label: wav-name
-- type: datetime
-  name: wav-guid
-  label: wav-guid
