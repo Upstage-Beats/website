@@ -45,3 +45,5 @@ fields:
 - type: text
   name: wav-name
   label: wav-name
+pages:
+- _posts/God's Favourite Customer.md
