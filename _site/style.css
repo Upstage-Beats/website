@@ -100,9 +100,7 @@ header.full-width .split-buttons {
 }
 
 
-
 /* Tracks */
-
 .track-container {
   width: 100%;
   padding: 60px 0;
@@ -137,11 +135,12 @@ header.full-width .split-buttons {
 
 .track-row button {
   border: none;
-  background-color: transparent;
+  min-height: 40px;
+  margin: 0;
+  padding: 0;
   border-left: 1px solid lightgray;
-  height: 40px;
   flex-grow: 1;
-
+  background-color: transparent;
   transition: .2s ease-in-out;
 }
 
@@ -151,7 +150,6 @@ header.full-width .split-buttons {
 
 
 /* FOOTER */
-
 .page-footer {
   display: inline-flex;
   justify-content: space-between;
@@ -172,6 +170,7 @@ header.full-width .split-buttons {
 .page-footer div:last-of-type {
   text-align: right;
 }
+
 
 /* TEXT */
 ::selection {
@@ -235,11 +234,8 @@ h2 {
 }
 
 
-
-
 /* MOBILE */
-
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1000px) {
   header div:nth-child(3) {
     display: none;
   }
@@ -354,7 +350,7 @@ h2 {
   h1 {
     font-size: 22px;
     padding: 0;
-    margin: 0 0 20px 0;
+    margin: 10px 0 20px 0;
   }
 
   h3,
@@ -370,9 +366,6 @@ h2 {
   }
 
 }
-
-
-
 
 
 /* CART */
