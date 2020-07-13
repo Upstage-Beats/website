@@ -9,7 +9,7 @@
 }
 
 html {
-  background-color: ;
+  overflow-x: hidden;
 }
 
 body {
@@ -27,6 +27,7 @@ main {
   flex-grow: 1;
   background-color: #F3F3F3;
   display: flex;
+  padding: 0 20px;
 }
 
 header.dropdown {
@@ -51,19 +52,19 @@ header.full-width div {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: #A3BAB2;
   background-color: #A6D2C4;
 }
 
 header.full-width .logo-container {
-  width: 120px;
   border-left: none;
-}
-
-header img {
-  width: 100px;
-  height: 100px;
-  padding: 12px;
+  min-width: 120px;
+  max-width: 120px;
+  background-image: url(/images/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-position: center middle;
+  padding: 16px;
 }
 
 header.full-width .split-buttons {
@@ -92,49 +93,13 @@ header.full-width .split-buttons {
 }
 
 
-.dropdown-top {
-  width: 100%;
-  display: inline-flex;
-  justify-content: space-between;
-}
-
-.toggler {
-  cursor: pointer;
-  width: 50px;
-  text-align: right;
-  transition: 0.4s;
-}
-
-.toggler:after {
-  content: url(images/hamburger.svg);
-}
-
-.open .toggler:after {
-  content: url(images/up-arrow.svg);
-}
-
-.panel {
-  display: flex;
-  flex-direction: column;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.5s;
-  padding: 8px 0 0 0;
-  margin: 0;
-  border-bottom: 1px solid;
-}
-
-.panel .active {
-  color: #4C7E62;
-}
-
 
 
 /* Tracks */
 
 .track-container {
   width: 100%;
-  padding: 60px 20px;
+  padding: 60px 0;
   display: flex;
   flex-direction: column;
 }
@@ -159,13 +124,18 @@ header.full-width .split-buttons {
   margin-top: -1px;
 }
 
+.track-row .button-row {
+  width: 180px;
+  display: flex;
+}
+
 .track-row button {
-  margin-left: -4px;
   border: none;
   background-color: transparent;
   border-left: 1px solid lightgray;
   height: 40px;
-  min-width: 90px;
+  flex-grow: 1;
+
   transition: .2s ease-in-out;
 }
 
@@ -208,7 +178,7 @@ h2,
 h3,
 p,
 a,
-.track-row button,
+.track-row.button-row button,
 .split-buttons button {
   font-size: 18px;
   text-rendering: optimizeLegibility;
@@ -286,29 +256,109 @@ img.fade {
     -webkit-text-size-adjust: 100%;
   }
 
-
-
   header.full-width {
     display: none;
   }
 
   header.dropdown {
     display: block;
-    padding: 0 20px;
-  }
-
-  footer {
-    width: 100vw;
-    margin: 16px 0 -16px -16px;
     padding: 0;
-    background-color: #E7E9E6;
+    background-color: #A6D2C4;
   }
 
-  .footer-content {
-    flex-direction: column;
+  header.dropdown .dropdown-top {
+    margin: 0;
+    padding: 0;
     width: 100%;
-    margin: 0 auto;
-    padding: 0 18px 18px 18px;
+    display: inline-flex;
+    justify-content: space-between;
+  }
+
+  header.dropdown .logo-container {
+    border-left: none;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    background-image: url(/images/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-position: center middle;
+  }
+
+  header.dropdown .toggler {
+    cursor: pointer;
+    transition: 0.4s;
+    padding: 0;
+    margin: 0;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid black;
+    border-bottom: none;
+  }
+
+  header.dropdown .toggler:after {
+    content: url(images/hamburger.svg);
+  }
+
+  .open header.dropdown .toggler:after {
+    content: url(images/hamburger.svg);
+  }
+
+  header.dropdown .panel {
+    padding: 0 10px;
+    margin: -4px 0 0 0;
+    border-top: 1px solid;
+
+    display: flex;
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+    border-bottom: 1px solid;
+  }
+
+  header.dropdown .panel a {
+    padding-bottom: 6px;
+  }
+
+  header.dropdown .panel .active {
+    color: white;
+  }
+
+  main {
+    padding: 0 10px;
+  }
+
+  .track-container {
+    padding: 60px 0;
+  }
+
+  .track-row {
+    flex-direction: column;
+    border: none;
+    width: 100%;
+    margin: 0 0 16px 0;
+  }
+
+  .track-row iframe {
+    max-width: 100%;
+    }
+
+  .track-row .button-row {
+    width: 100%;
+    border: 1px solid lightgray;
+  }
+
+  .track-row .button-row button:first-of-type {
+    border: none;
+  }
+
+  .page-footer {
+    height: 90px;
+    padding: 20px 10px;
   }
 
   h1 {
