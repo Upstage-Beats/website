@@ -4,7 +4,6 @@
 * {
   box-sizing: border-box;
   color: #353839;
-  border-color: lightgray;
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
@@ -76,22 +75,28 @@ header.full-width .split-buttons {
   border-bottom: 1px solid;
 }
 
-.split-buttons a button {
+.split-buttons button  {
   border: none;
   border-left: 1px solid;
   background-color: transparent;
   width: 120px;
-  height: 59px;
+  height: 100%;
   padding: 0;
+  display: flex;
+  align-items: center;
 }
 
-.split-buttons a button:hover {
+.split-buttons button:hover {
   background-color: #EDB349;
 }
 
-.split-buttons a:last-child {
+.split-buttons button:last-child {
   border-top: 1px solid;
-  border-bottom: 1px solid;
+}
+
+.split-buttons button a {
+  flex-grow: 1;
+  padding: 16px 0;
 }
 
 
@@ -180,7 +185,7 @@ h3,
 p,
 a,
 .track-row.button-row button,
-.split-buttons a button,
+.split-buttons button a,
 .page-footer p,
 .page-footer a {
   font-size: 18px;
@@ -228,9 +233,7 @@ h2 {
 .track-row button {
   font-size: 12px;
 }
-.split-buttons a button {
-  font-size: 12px;
-}
+
 
 
 
@@ -260,6 +263,7 @@ h2 {
     display: block;
     padding: 0;
     background-color: #A6D2C4;
+    border-top: 1px solid;
   }
 
   header.dropdown .dropdown-top {
