@@ -58,7 +58,7 @@ header.full-width .logo-container {
   border-left: none;
   min-width: 120px;
   max-width: 120px;
-  background-image: url(/images/logo.png);
+  background-image: url(/images/logo.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-origin: content-box;
@@ -278,7 +278,7 @@ h2 {
     width: 100px;
     height: 100px;
     padding: 10px;
-    background-image: url(/images/logo.png);
+    background-image: url(/images/logo.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-origin: content-box;
