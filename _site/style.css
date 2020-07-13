@@ -94,7 +94,6 @@ header.full-width .split-buttons {
 
 
 
-
 /* Tracks */
 
 .track-container {
@@ -179,13 +178,16 @@ h3,
 p,
 a,
 .track-row.button-row button,
-.split-buttons button {
+.split-buttons button,
+.page-footer p,
+.page-footer a {
   font-size: 18px;
   text-rendering: optimizeLegibility;
   font-kerning: normal;
   text-decoration: none;
   line-height: 1.45;
   font-weight: 400;
+
 }
 
 a,
@@ -200,16 +202,11 @@ button {
   margin: 0;
 }
 
-.page-footer a {
-  text-decoration: underline;
-}
-
 h1 {
   font-size: 1.5vw;
   font-weight: 600;
   line-height: 1;
 }
-
 h1 a {
   font-weight: 400;
   font-style: italic;
@@ -217,11 +214,9 @@ h1 a {
   text-decoration: underline;
   transition: color .15s ease-in-out;
 }
-
 h1 a:hover {
   color: #4C7E62;
 }
-
 h2 {
   line-height: 1;
   font-weight: 800;
@@ -232,24 +227,24 @@ h2 {
 .track-row button {
   font-size: 12px;
 }
-
 .split-buttons button a {
   font-size: 12px;
 }
 
-/* ANIMATIONS */
-img {
-  filter: grayscale(1) brightness(.25);
-  transition: filter 1.8s;
-}
-
-img.fade {
-  filter: grayscale(0) brightness(1);
-}
 
 
 /* MOBILE */
-@media screen and (max-width: 1040px) {
+
+@media screen and (max-width: 1000px){
+  header div:nth-child(3) {
+    display: none;
+  }
+  h1 {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
   * {
     text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
@@ -273,8 +268,7 @@ img.fade {
     display: inline-flex;
     justify-content: space-between;
   }
-
-  header.dropdown .logo-container {
+  header.dropdown .dropdown-top .logo-container {
     border-left: none;
     width: 100px;
     height: 100px;
@@ -285,8 +279,7 @@ img.fade {
     background-origin: content-box;
     background-position: center middle;
   }
-
-  header.dropdown .toggler {
+  header.dropdown .dropdown-top .toggler {
     cursor: pointer;
     transition: 0.4s;
     padding: 0;
@@ -298,20 +291,17 @@ img.fade {
     border-left: 1px solid black;
     border-bottom: none;
   }
-
-  header.dropdown .toggler:after {
+  header.dropdown .dropdown-top .toggler:after {
     content: url(images/hamburger.svg);
   }
-
-  .open header.dropdown .toggler:after {
-    content: url(images/hamburger.svg);
+  header.dropdown.open .dropdown-top .toggler:after {
+    content: url(images/up-arrow.svg);
   }
 
   header.dropdown .panel {
     padding: 0 10px;
     margin: -4px 0 0 0;
     border-top: 1px solid;
-
     display: flex;
     flex-direction: column;
     max-height: 0;
@@ -319,11 +309,9 @@ img.fade {
     transition: all 0.5s;
     border-bottom: 1px solid;
   }
-
   header.dropdown .panel a {
     padding-bottom: 6px;
   }
-
   header.dropdown .panel .active {
     color: white;
   }
@@ -335,45 +323,56 @@ img.fade {
   .track-container {
     padding: 60px 0;
   }
-
   .track-row {
     flex-direction: column;
     border: none;
     width: 100%;
     margin: 0 0 16px 0;
   }
-
   .track-row iframe {
-    max-width: 100%;
-    }
-
+    min-width: 100%;
+  }
+  .track-row:after {
+    position: absolute;
+    content: '';
+    display: block;
+    z-index: 22222;
+    width: calc(100% - 64px);
+    height: 40px;
+    right: 11px;
+    background:
+      linear-gradient(90deg, transparent calc(100% - 60px), white calc(100% - 60px));
+  }
   .track-row .button-row {
     width: 100%;
     border: 1px solid lightgray;
   }
-
   .track-row .button-row button:first-of-type {
     border: none;
   }
 
   .page-footer {
-    height: 90px;
-    padding: 20px 10px;
+    height: 62px;
+    padding: 12px 10px;
   }
 
   h1 {
     font-size: 22px;
-    padding: 20px 0 16px 0;
-    color: #353839;
+    padding: 0;
+    margin: 0 0 20px 0;
   }
 
-  h2,
   h3,
   p,
-  a {
-    font-size: 15px
+  a,
+  button {
+    font-size: 15px;
   }
 
+  .page-footer p,
+  .page-footer a {
+    font-size: 10px;
+  }
 
 }
 
