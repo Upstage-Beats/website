@@ -131,7 +131,8 @@ header.full-width .split-buttons {
 }
 
 .track-row {
-  display: inline-flex;
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid lightgray;
@@ -145,14 +146,25 @@ header.full-width .split-buttons {
 }
 
 .track-row iframe {
-  max-width: 320px;
+  width: 42px;
+  min-width: 42px;
+  max-width: 42px;
+  height: 42px;
+  min-height: 42px;
+  max-height: 42px;
   margin-bottom: -1px;
   margin-top: -1px;
 }
 
+.track-row .button-row,
+.track-row .sample-and-title {
+  display: flex;
+  align-items: center;
+}
+
 .track-row .button-row {
   width: 180px;
-  display: flex;
+  border-right: 0px;
 }
 
 .track-row button {
@@ -259,8 +271,18 @@ h3 a {
   font-weight: 600;
 }
 
-.track-row button {
+.track-row button,
+.track-row h4 {
   font-size: 12px;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.track-row h4 {
+  text-align: left;
+  flex-grow: 1;
+  padding-left: 20px;
 }
 
 
@@ -365,14 +387,23 @@ h3 a {
     border: none;
     width: 100%;
     margin: 0 0 16px 0;
+    align-items: flex-start;
+    align-content: center;
+
+
+    border-top: 1px solid lightgray;
+    border-right: 1px solid lightgray;
   }
-  .track-row iframe {
-    min-width: 100%;
+  .track-row iframe,
+  .track-row h4 {
+    display: inline-block;
   }
 
   .track-row .button-row {
     width: 100%;
-    border: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
   }
   .track-row .button-row button:first-of-type {
     border: none;
