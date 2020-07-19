@@ -1,9 +1,9 @@
 ---
 mp3-price: 25
 wav-price: 50
-sample-embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=2360017918/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=none/transparent=true/"
-  seamless><a href="http://upstagebeats.bandcamp.com/track/goldeneye-type-beat-prod-by-uno">Goldeneye
-  Type Beat (Prod. by Uno) by Uno</a></iframe>'
+sample-embed: '<iframe style="border: 0; width: 400px; height: 406px;" src="https://bandcamp.com/EmbeddedPlayer/album=4020584789/size=large/bgcol=ffffff/linkcol=0687f5/artwork=none/transparent=true/"
+  seamless><a href="http://huhwhatwhere.bandcamp.com/album/the-other-day">The Other
+  Day by Pomo</a></iframe>'
 mp3-name: Goldeneye (prod. Uno)
 mp3-description: Prod By Uno
 mp3-guid: ea5cf708-94dc-419b-a564-9f757055a2f2
