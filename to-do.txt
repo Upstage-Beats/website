@@ -4,3 +4,55 @@ Robots
 
 
     <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.16/default/snipcart.css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .track-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid lightgray;
+      border-right: 1px solid lightgray;
+      width: 100%;
+      background-color: white;
+
+
+
+      display: block;
+      background-color: pink;
+      max-width: 440px;
+      height: 44px;
+      overflow: hidden;
+
+    }
+
+    .track-row:first-of-type {
+      border-top: 1px solid lightgray;
+    }
+
+    .track-row iframe {
+      width: 42px;
+      min-width: 42px;
+      max-width: 42px;
+      height: 42px;
+      min-height: 42px;
+      max-height: 42px;
+      margin-bottom: -1px;
+      margin-top: -1px;
+
+      display: inline-block;
+      min-width: 542px;
+      margin: -62px 0 0 -12px;
+    }
