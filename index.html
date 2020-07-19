@@ -5,50 +5,46 @@ title: Home
 
 <main>
 
-<section class="track-container">
-  <h1>Currently Available Beats</h1>
+  <section class="home-container">
 
-  {% for post in site.posts %}
+  <h1 class="home-heading">Currently Available Beats</h1>
 
-  <div class="track-row">
+  <section class="track-container">
 
-    <div class="sample-and-title">
-      <div class="sample">
-      {{ post.sample-embed}}
+    {% for post in site.posts %}
+
+    <div class="track-section">
+
+      <div class="top">
+        <h4>{{ post.mp3-name }}</h4>
+        <div></div>
       </div>
 
-      <h4>{{ post.mp3-name }}</h4>
+      <div class="bottom">
+
+        <div class="sample">
+          {{ post.sample-embed}}
+        </div>
+
+        <div class="button-row">
+          <button class="snipcart-add-item" data-item-id="{{ post.mp3-id}}" data-item-price="{{ post.mp3-price}}" data-item-url="/" data-item-description="{{ post.mp3-description}}" data-item-name="{{ post.mp3-name}}"
+            data-item-file-guid="{{ post.mp3-guid}}" data-item-max-quantity="1">
+            Buy .mp3
+          </button>
+          <button class="snipcart-add-item" data-item-id="{{ post.wav-id}}" data-item-price="{{ post.wav-price}}" data-item-url="/" data-item-description="{{ post.wav-description}}" data-item-name="{{ post.wav-name}}"
+            data-item-file-guid="{{ post.wav-guid}}" data-item-max-quantity="1">
+            Buy .wav
+          </button>
+        </div>
+
+      </div>
+
     </div>
 
-    <div class="button-row">
-      <button class="snipcart-add-item"
-          data-item-id="{{ post.mp3-id}}"
-          data-item-price="{{ post.mp3-price}}"
-          data-item-url="/"
-          data-item-description="{{ post.mp3-description}}"
-          data-item-name="{{ post.mp3-name}}"
-          data-item-file-guid="{{ post.mp3-guid}}"
-          data-item-max-quantity="1"
-          >
-          Buy .mp3
-        </button>
-      <button class="snipcart-add-item"
-          data-item-id="{{ post.wav-id}}"
-          data-item-price="{{ post.wav-price}}"
-          data-item-url="/"
-          data-item-description="{{ post.wav-description}}"
-          data-item-name="{{ post.wav-name}}"
-          data-item-file-guid="{{ post.wav-guid}}"
-          data-item-max-quantity="1"
-          >
-          Buy .wav
-        </button>
-    </div>
+    {% endfor %}
 
-  </div>
+  </section>
 
-  {% endfor %}
 </section>
-
 
 </main>
