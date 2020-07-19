@@ -144,10 +144,6 @@ header.full-width .split-buttons {
 }
 
 .track-row .sample {
-  height: 42px;
-  min-height: 42px;
-  max-height: 42px;
-
   display: block;
   background-color: pink;
   max-width: 440px;
@@ -155,7 +151,7 @@ header.full-width .split-buttons {
   overflow: hidden;
 }
 
-.track-row.sample iframe {
+.track-row .sample iframe {
     display: inline-block;
     min-width: 542px;
     margin: -62px 0 0 -12px;
