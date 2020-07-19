@@ -7,10 +7,10 @@ sample-embed: '<iframe style="border: 0; width: 400px; height: 406px;" src="http
 mp3-name: Goldeneye (prod. Uno)
 mp3-description: Prod By Uno
 mp3-guid: ea5cf708-94dc-419b-a564-9f757055a2f2
-mp3-id: ''
-mp3-url: ''
-wav-id: ''
-wav-url: ''
+mp3-id: Goldeneye (prod. Uno)
+mp3-url: "/"
+wav-id: Goldeneye (prod. Uno)
+wav-url: "/"
 wav-guid: 547f9254-88b2-4de8-857e-136dd544b6ee
 wav-description: Prod By Uno
 wav-name: Goldeneye
