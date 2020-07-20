@@ -1,9 +1,9 @@
 ---
 mp3-price: 25
 wav-price: 50
-sample-embed: '<iframe style="border: 0; width: 400px; height: 406px;" src="https://bandcamp.com/EmbeddedPlayer/album=4020584789/size=large/bgcol=ffffff/linkcol=0687f5/artwork=none/transparent=true/"
-  seamless><a href="http://huhwhatwhere.bandcamp.com/album/the-other-day">The Other
-  Day by Pomo</a></iframe>'
+sample-embed: '<iframe style="border: 0; width: 400px; height: 406px;" src="https://bandcamp.com/EmbeddedPlayer/album=1576623668/size=large/bgcol=ffffff/linkcol=333333/artwork=none/track=3120054320/transparent=true/"
+  seamless><a href="http://upstagebeats.bandcamp.com/album/instrumental-tape-1">Instrumental
+  Tape #1 by UpstageBeats</a></iframe>'
 mp3-name: Goldeneye (prod. Uno)
 mp3-description: Prod By Uno
 mp3-guid: ea5cf708-94dc-419b-a564-9f757055a2f2
