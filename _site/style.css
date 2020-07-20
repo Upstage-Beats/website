@@ -20,15 +20,20 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+
+  background-color: #F6F6F6;
 }
 
 main {
-  padding: 0 20px;
   flex-grow: 1;
-  background-color: #F3F3F3;
-  background-color: #F6F6F6;
   display: flex;
   flex-direction: column;
+
+  width: 100%;
+  max-width: 1580px;
+  padding: 0 20px;
+  margin: 20px auto;
 }
 
 main.error-page {
@@ -122,18 +127,10 @@ header.full-width .split-buttons {
   padding: 16px 0;
 }
 
-.home-container {
-  width: 100%;
-  flex-grow: 1;
-  max-width: 1580px;
-  margin: 20px auto;
-}
 
 /* Tracks */
 .track-container {
   width: 100%;
-  max-width: 1500px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
@@ -239,6 +236,10 @@ a,
   font-weight: 400;
 }
 
+p {
+  text-align: justify;
+}
+
 a,
 button {
   cursor: pointer;
@@ -266,12 +267,6 @@ h1 a {
 }
 h1 a:hover {
   color: #4C7E62;
-}
-
-.home-heading {
-  width: 100%;
-  max-width: 1500px;
-  margin: 30px auto 20px auto;
 }
 
 h2 {
@@ -302,15 +297,15 @@ h3 a {
 
 /* MOBILE */
 @media screen and (max-width: 1525px) {
+  main {
+    margin: 10px auto;
+  }
+
   header div:nth-child(3) {
     display: none;
   }
   h1 {
     font-size: 2vw;
-  }
-
-  .home-container {
-    margin: 10px 0;
   }
 
   .home-heading {
@@ -404,16 +399,13 @@ h3 a {
 
   main {
     padding: 0 10px;
+    margin: 0 auto;
   }
 
   main div.error-page {
     width: 100%;
     padding: 20px;
     height: 36vh;
-  }
-
-  section.home-container {
-    margin: 0;
   }
 
   .home-heading {
@@ -454,7 +446,6 @@ h3 a {
 }
 
 @media screen and (max-width: 450px) {
-
   .track-section {
     width: 100%;
     max-width: 734px;
@@ -487,8 +478,6 @@ h3 a {
     background-color: transparent;
     transition: .2s ease-in-out;
   }
-
-
 
 }
 
@@ -644,29 +633,4 @@ footer {
   width: 100%;
   margin: 0;
   padding: 0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-.test-container {
-  display: block;
-  background-color: pink;
-  max-width: 440px;
-  height: 44px;
-  overflow: hidden;
-}
-
-.test-container iframe {
-  display: inline-block;
-  min-width: 542px;
-  margin: -62px 0 0 -12px;
 }
