@@ -131,13 +131,14 @@ header.full-width .split-buttons {
 /* Tracks */
 .track-container {
   width: 100%;
+  max-width: 1500px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .track-section {
   width: 100%;
   max-width: 734px;
-  height: 100%;
   margin-bottom: 20px;
 }
 .track-section .top,
