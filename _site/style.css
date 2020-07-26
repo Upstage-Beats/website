@@ -31,9 +31,9 @@ main {
   flex-direction: column;
 
   width: 100%;
-  max-width: 1580px;
+  max-width: 780px;
   padding: 0 20px;
-  margin: 20px auto;
+  margin: 40px auto;
 }
 
 main.error-page {
