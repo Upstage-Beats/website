@@ -239,6 +239,7 @@ a,
 
 p {
   text-align: justify;
+  margin: 0 0 20px 0;
 }
 
 a,
@@ -272,13 +273,17 @@ h1 a:hover {
 
 h2 {
   line-height: 1;
+  font-size: 20px;
   font-weight: 800;
   border-bottom: 2px solid lightgray;
   padding-bottom: 8px;
+  margin-top: 40px;
 }
 
 h3 {
-  margin: 0;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+
 }
 
 h3 a {
