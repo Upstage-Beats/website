@@ -36,6 +36,12 @@ main {
   margin: 40px auto;
 }
 
+main.track-page {
+  background-color: azure;
+  display: flex;
+  justify-content: center;
+}
+
 main.error-page {
   justify-content: center;
   background: linear-gradient(to right, #ffc3a0, #FFAFBD);
@@ -172,6 +178,8 @@ header.full-width .split-buttons {
     min-width: 700px;
     margin: -62px 0 0 -12px;
 }
+
+
 .button-row {
   display: flex;
   align-items: center;

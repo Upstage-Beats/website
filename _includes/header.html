@@ -1,36 +1,45 @@
 <header class="dropdown">
 
-    <div class="dropdown-top">
-        <a href="index.html"><div class="logo-container"></div></a>
-        <h2 class="toggler"></h2>
-    </div>
+  <div class="dropdown-top">
+    <a href="/index.html">
+      <div class="logo-container"></div>
+    </a>
+    <h2 class="toggler"></h2>
+  </div>
 
-    <div class="panel">
-      <br>
-      <a href="/#/cart">Cart</a>
-      {% assign links = site.pages | sort: "order" %}
-          {% for link in links %}
-            {% if link.order %}
-              <a href="{{ link.url | absolute_url }}"
-                 class="{% if link.url  == page.url %}active{% endif %}">
-                 {{ link.title }}
-              </a>
-            {% endif %}
-          {% endfor %}
-          <br>
+  <div class="panel">
+    <br>
+    <a href="/#/cart">Cart</a>
+    {% assign links = site.pages | sort: "order" %}
+    {% for link in links %}
+    {% if link.order %}
+    <a href="{{ link.url | absolute_url }}" class="{% if link.url  == page.url %}active{% endif %}">
+      {{ link.title }}
+    </a>
+    {% endif %}
+    {% endfor %}
+    <br>
 
-    </div>
+  </div>
 
 </header>
 
 <header class="full-width">
-<a href="index.html"><div class="logo-container"></div></a>
-<div><h1>Hi-Fi Recordings</h1></div>
-<div><h1>Exclusive Licensing Available</h1></div>
-<div><h1>For Artists, by Artists</h1></div>
-<div class="split-buttons">
+  <a href="/index.html">
+    <div class="logo-container"></div>
+  </a>
+  <div>
+    <h1>Hi-Fi Recordings</h1>
+  </div>
+  <div>
+    <h1>Exclusive Licensing Available</h1>
+  </div>
+  <div>
+    <h1>For Artists, by Artists</h1>
+  </div>
+  <div class="split-buttons">
     <button><a href="/#/cart">Cart</a></button>
-    <button><a href="contact.html">Contact</a></button>
-</div>
+    <button><a href="/contact.html">Contact</a></button>
+  </div>
 
 </header>
