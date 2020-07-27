@@ -2,32 +2,44 @@
 label: Import Template
 hide_body: true
 fields:
-- type: number
-  name: mp3-price
-  label: mp3-price
-- type: number
-  name: wav-price
-  label: wav-price
+- name: tags
+  type: tag_list
+  default:
+  - All Tracks
+  label: Tags
+  description: Tags
 - type: textarea
   name: sample-embed
   label: sample-embed
 - type: text
   name: mp3-name
   label: mp3-name
+- type: number
+  name: mp3-price
+  label: mp3-price
 - type: text
   name: mp3-description
   label: mp3-description
+- type: text
+  name: mp3-id
+  label: mp3-id
 - name: mp3-guid
   type: text
   config:
     required: false
   label: mp3-guid
 - type: text
-  name: mp3-id
-  label: mp3-id
-- type: text
   name: mp3-url
   label: mp3-url
+- type: text
+  name: wav-name
+  label: wav-name
+- type: number
+  name: wav-price
+  label: wav-price
+- type: text
+  name: wav-description
+  label: wav-description
 - type: text
   name: wav-id
   label: wav-id
@@ -39,13 +51,14 @@ fields:
   config:
     required: false
   label: wav-guid
-- type: text
-  name: wav-description
-  label: wav-description
-- type: text
-  name: wav-name
-  label: wav-name
+- name: layout
+  type: text
+  config:
+    required: false
+  hidden: true
+  label: Layout (don't change)
+  default: post
+  description: Do not change or delete
 pages:
 - _posts/2020-07-18-Goldeneye (prod. Uno).md
 - _posts/2020-07-18-July 6 (prod. Uno).md
-- _posts/2020-07-20.24Karat.md
