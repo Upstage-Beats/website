@@ -12,17 +12,17 @@ title: Home
     {% for post in site.posts %}
 
     <div class="track-section">
-
       <div class="top">
         <h4>{{ post.mp3-name }}</h4>
+        <a class="post-share"
+           <a href="mailto:?subject=Hey, I think you'll like this beat I found!&amp;body=Check%20out%20this%20beat%20from%20UpstageBeats.com:%20UpstageBeats.com{{ post.url }}"
+           title="Share Track"></a>
       </div>
 
       <div class="bottom">
-
         <div class="sample">
           {{ post.sample-embed}}
         </div>
-
         <div class="button-row">
           <button class="snipcart-add-item" data-item-id="{{ post.mp3-id}}" data-item-price="{{ post.mp3-price}}" data-item-url="/" data-item-description="{{ post.mp3-description}}" data-item-name="{{ post.mp3-name}}"
             data-item-file-guid="{{ post.mp3-guid}}" data-item-max-quantity="1">
@@ -33,9 +33,7 @@ title: Home
             Buy .wav
           </button>
         </div>
-
       </div>
-
     </div>
 
     {% endfor %}
