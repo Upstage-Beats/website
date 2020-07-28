@@ -199,6 +199,29 @@ header.full-width .split-buttons {
   padding: 0 10px;
 }
 
+.track-section .top .top-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.track-section .top .top-right input {
+  display: block;
+  max-width: 200px;
+  font-size: 10px;
+  width: 0;
+  border: none;
+  transition-property: width;
+  transition: .65s linear;
+  transition-delay: none;
+}
+
+.track-section .top .top-right input.clicked  {
+  width: 30vw;
+  border: 1px solid lightgray;
+}
+
+
 .sample {
   border: none;
   border-left: 1px solid lightgray;
@@ -215,9 +238,9 @@ header.full-width .split-buttons {
 }
 
 .post-share {
-  width: 18px;
-  height: 18px;
-  background-image: url(/images/share-icon.svg);
+  width: 24px;
+  height: 20px;
+  background-image: url(/images/link-icon.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
