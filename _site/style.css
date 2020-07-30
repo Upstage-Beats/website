@@ -20,6 +20,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   background-color: #F6F6F6;
+  background-color: #FAFBE6;
 }
 
 main {
@@ -29,7 +30,7 @@ main {
   width: 100%;
   max-width: 780px;
   padding: 0 20px;
-  margin: 40px auto;
+  margin: 0 auto;
 }
 
 .track-page {
@@ -85,6 +86,7 @@ header.full-width div {
   align-items: center;
   width: 100%;
   background-color: #A6D2C4;
+  background-color: #A0F8E0;
 }
 
 header.full-width .logo-container {
@@ -120,6 +122,7 @@ header.full-width .split-buttons {
 
 .split-buttons button:hover {
   background-color: #EDB349;
+  background-color: #7E88EE;
 }
 
 .split-buttons button:last-child {
@@ -150,6 +153,7 @@ header.full-width .split-buttons {
 
 .track-page .track-section a button:hover {
   background-color: #EDB349;
+  background-color: #7E88EE;
 }
 
 .track-page .track-section a button img {
@@ -266,6 +270,7 @@ header.full-width .split-buttons {
 
 .button-row button:hover {
   background-color: #EDB349;
+  background-color: #7E88EE;
 }
 
 /* FOOTER */
@@ -333,7 +338,12 @@ h1 {
   font-size: 1.5vw;
   font-weight: 600;
   line-height: 1;
-  margin: 20px 0;
+
+  text-align: center;
+}
+
+main h1 {
+  padding: 30px 0 20px 0;
 }
 
 h1 a {
@@ -393,13 +403,6 @@ h3 a {
 
   h1 {
     font-size: 2vw;
-  }
-
-  .home-heading {
-    width: 734px;
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .track-container {
@@ -500,10 +503,6 @@ h3 a {
     height: 36vh;
   }
 
-  .home-heading {
-    margin: 20px 0;
-  }
-
   .sample {
     width: 100%;
   }
@@ -523,6 +522,10 @@ h3 a {
     margin: 20px 0 20px 0;
   }
 
+  main h1 {
+    padding: 10px 0 10px 0;
+  }
+
   h3,
   p,
   a,
@@ -537,6 +540,7 @@ h3 a {
 }
 
 @media screen and (max-width: 450px) {
+
   .track-section {
     width: 100%;
     max-width: 734px;
