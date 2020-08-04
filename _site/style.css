@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 
 /* PAGE */
 * {
   box-sizing: border-box;
   color: #353839;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 html {
@@ -318,8 +318,6 @@ a,
 .page-footer p,
 .page-footer a {
   font-size: 18px;
-  text-rendering: optimizeLegibility;
-  font-kerning: normal;
   text-decoration: none;
   line-height: 1.45;
   font-weight: 400;
@@ -328,6 +326,10 @@ a,
 header h1,
 header a {
   color: white;
+}
+
+header h1 {
+  font-weight: 600;
 }
 
 p {
@@ -350,9 +352,8 @@ button {
 
 h1 {
   font-size: 1.5vw;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1;
-
   text-align: center;
 }
 
@@ -375,14 +376,14 @@ h1 a:hover {
 h2 {
   line-height: 1;
   font-size: 20px;
-  font-weight: 800;
+  font-weight: 500;
   border-bottom: 2px solid lightgray;
   padding-bottom: 8px;
   margin-top: 40px;
 }
 
 h3 {
-  font-weight: 600;
+  font-weight: 500;
   margin: 0 0 20px 0;
 }
 
