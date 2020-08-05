@@ -2,24 +2,28 @@
 
 <main>
 
-  <h1 class="home-heading">{{ page.tag }}</h1>
+  <section class="title-and-tags">
+
+  <h1>{{ page.tag }}</h1>
+
+  <section class="tag-container">
+    {% assign links = site.pages %}
+    {% for link in links %}
+    {% if link.tag %}
+    <a href="{{ link.url | absolute_url }}"
+       class="{% if link.url  ==  page.url %}active{% endif %}">
+      <button class="tag">{{ link.tag }}</button>
+    </a>
+    {% endif %}
+    {% endfor %}
+  </section>
+
+  </section>
 
   <section class="track-container">
 
-    <section class="tag-container">
-      {% assign links = site.pages %}
-      {% for link in links %}
-      {% if link.tag %}
-      <a href="{{ link.url | absolute_url }}"
-         class="{% if link.url  ==  page.url %}active{% endif %}">
-        <button class="tag">{{ link.tag }}</button>
-      </a>
-      {% endif %}
-      {% endfor %}
-    </section>
-
     {% for post in site.posts %}
-    {% if link.tag == post.tag %}
+    {% if post.tags contains page.tag %}
 
     <div class="track-section">
       <div class="top">

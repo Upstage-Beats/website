@@ -21,6 +21,7 @@ body {
   justify-content: space-between;
   background-color: #F6F6F6;
   background-color: #EBEBEB;
+  background-color: #D6E0E5;
 }
 
 main {
@@ -67,6 +68,7 @@ main div.error-page {
 
 header {
   background-color: #1BC2AA;
+  background-color: #73937E;
 }
 
 header.dropdown {
@@ -167,10 +169,17 @@ header.full-width .split-buttons {
 }
 
 /* Tracks */
-.tag-container {
+
+.title-and-tags {
   width: 100%;
-  max-width: 1500px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.tag-container {
+  width: 270px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -181,7 +190,6 @@ header.full-width .split-buttons {
   width: 120px;
   background-color: white;
   font-style: italic;
-  margin: 0;
   padding: 0;
   border: 1px solid lightgray;
   flex-grow: 1;
@@ -189,12 +197,11 @@ header.full-width .split-buttons {
 }
 
 .tag-container a.active button {
-  background-color: #7E88EE;
+  background-color: lightgray;
 }
 
 .tag-container .tag:hover {
-  background-color: #EDB349;
-  background-color: #7E88EE;
+  background-color: lightgray;
 }
 
 .track-container {
@@ -274,12 +281,16 @@ header.full-width .split-buttons {
   background-image: url(/images/link-icon.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
+  background-position: right;
   transition: filter .14s ease-in-out;
 }
 
-.post-share:hover {
-  filter: invert(89%) sepia(41%) saturate(2791%) hue-rotate(319deg) brightness(95%) contrast(95%);
+.post-share:before {
+  background-color: transparent;
+  content: '';
+  width: 10px;
+  height: 20px;
+  display: block;
 }
 
 .button-row {
@@ -312,7 +323,7 @@ header.full-width .split-buttons {
   height: 90px;
   padding: 20px 20px;
   border-top: 1px solid;
-  background-color: #3A5386;
+  background-color: #73937E;
 }
 
 .page-footer div {
@@ -346,12 +357,46 @@ a,
   font-weight: 400;
 }
 
+h1 {
+  font-size: 1.5vw;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+}
+
 header h1,
 header a {
   color: white;
 }
 
 header h1 {
+  font-weight: 600;
+}
+
+.title-and-tags h1 {
+  width: 50%;
+  font-weight: 600;
+  line-height: 1;
+  margin: 0;
+  text-align: left;
+}
+
+h2 {
+  line-height: 1;
+  font-size: 20px;
+  font-weight: 500;
+  border-bottom: 2px solid lightgray;
+  padding-bottom: 8px;
+  margin-top: 40px;
+}
+
+h3 {
+  font-weight: 500;
+  margin: 0 0 20px 0;
+}
+
+h3 a {
+  text-decoration: underline;
   font-weight: 600;
 }
 
@@ -373,47 +418,6 @@ button {
   color: white;
 }
 
-h1 {
-  font-size: 1.5vw;
-  font-weight: 500;
-  line-height: 1;
-  text-align: center;
-}
-
-main h1 {
-  padding: 0 0 20px 0;
-}
-
-h1 a {
-  font-weight: 400;
-  font-style: italic;
-  font-size: 20px;
-  text-decoration: underline;
-  transition: color .15s ease-in-out;
-}
-
-h1 a:hover {
-  color: #4C7E62;
-}
-
-h2 {
-  line-height: 1;
-  font-size: 20px;
-  font-weight: 500;
-  border-bottom: 2px solid lightgray;
-  padding-bottom: 8px;
-  margin-top: 40px;
-}
-
-h3 {
-  font-weight: 500;
-  margin: 0 0 20px 0;
-}
-
-h3 a {
-  text-decoration: underline;
-  font-weight: 600;
-}
 
 .button-row button,
 .track-section h4 {
@@ -443,12 +447,10 @@ h3 a {
     font-size: 2vw;
   }
 
-  .track-container {
-    width: 734px;
-    max-width: 100%;
-    margin: 0 auto;
-    flex-direction: column;
+  .title-and-tags {
+    margin-top: 60px;
   }
+
 }
 
 @media screen and (max-width: 775px) {
@@ -540,6 +542,10 @@ h3 a {
     height: 36vh;
   }
 
+  .title-and-tags {
+    margin: 20px 0;
+  }
+
   .sample {
     width: 100%;
   }
@@ -578,11 +584,40 @@ h3 a {
 
 @media screen and (max-width: 450px) {
   .track-section {
-    width: 100%;
-    max-width: 734px;
-    height: 100%;
     margin-bottom: 10px;
   }
+
+  .title-and-tags {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .title-and-tags h1 {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .tag-container {
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .tag-container .tag {
+    min-height: 30px;
+    width: 120px;
+    background-color: white;
+    font-style: italic;
+    padding: 0;
+    border: 1px solid lightgray;
+    flex-grow: 1;
+    transition: .2s ease-in-out;
+  }
+
 
   .sample {
     width: 45px;
