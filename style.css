@@ -31,7 +31,6 @@ main {
   max-width: 780px;
   padding: 0 20px;
   margin: 0 auto;
-
   background-color: transparent;
   margin: 60px auto;
 }
@@ -104,7 +103,6 @@ header.full-width .logo-container {
   background-origin: content-box;
   background-position: center middle;
   padding: 16px;
-
   filter: invert(1);
   border-color: white;
 }
@@ -168,8 +166,37 @@ header.full-width .split-buttons {
   padding-top: 2px;
 }
 
-
 /* Tracks */
+.tag-container {
+  width: 100%;
+  max-width: 1500px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.tag-container .tag {
+  min-height: 30px;
+  width: 120px;
+  background-color: white;
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+  border: 1px solid lightgray;
+  flex-grow: 1;
+  transition: .2s ease-in-out;
+}
+
+.tag-container a.active button {
+  background-color: #7E88EE;
+}
+
+.tag-container .tag:hover {
+  background-color: #EDB349;
+  background-color: #7E88EE;
+}
+
 .track-container {
   width: 100%;
   max-width: 1500px;
@@ -180,11 +207,8 @@ header.full-width .split-buttons {
 
 .track-section {
   width: 100%;
-  max-width: 734px;
+  max-width: 100%;
   margin-bottom: 20px;
-}
-
-.track-page .track-section {
 }
 
 .track-section .top,
@@ -208,9 +232,9 @@ header.full-width .split-buttons {
 }
 
 .track-section .top .top-right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .track-section .top .top-right input {
@@ -224,11 +248,10 @@ header.full-width .split-buttons {
   transition-delay: none;
 }
 
-.track-section .top .top-right input.clicked  {
+.track-section .top .top-right input.clicked {
   width: 30vw;
   border: 1px solid lightgray;
 }
-
 
 .sample {
   border: none;
@@ -358,7 +381,7 @@ h1 {
 }
 
 main h1 {
-  padding: 30px 0 20px 0;
+  padding: 0 0 20px 0;
 }
 
 h1 a {
@@ -554,7 +577,6 @@ h3 a {
 }
 
 @media screen and (max-width: 450px) {
-
   .track-section {
     width: 100%;
     max-width: 734px;
