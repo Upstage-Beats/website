@@ -822,6 +822,42 @@ footer {
   margin: 0 auto;
 }
 
+.snipcart-layout__cols {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .snipcart-layout__cols .snipcart-checkout-step .snipcart__box {
+    flex-grow: 1;
+    margin: 0 -80px;
+  }
+}
+
+.snipcart-cart-summary-fees__notice.snipcart__font--regular,
+.snipcart-cart-summary-fees__item.snipcart__font--slim {
+  display: none;
+}
+
+.snipcart-cart-summary-fees__title:after {
+  padding-left: 4px;
+  font-size: 12px;
+  vertical-align: baseline;
+  content: '(taxes incl.)';
+}
+
+.snipcart-cart-summary {
+  display: none;
+}
+
+.snipcart-order__details {
+  padding-top: 40px;
+  margin: 0 4px;
+  background-color: white;
+}
+
+
 .snipcart-featured-payment-methods.snipcart-featured-payment-methods--no-background {
   background-color: white;
 }
