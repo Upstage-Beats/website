@@ -1,6 +1,6 @@
 title: "Numerow"
-baseurl: ""
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "https://upstagebeats.com"
+url: "https://upstagebeats.com"
 
 permalink: "/:categories/:year/:month/:day/:title:output_ext"
 

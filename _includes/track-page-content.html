@@ -5,7 +5,7 @@
   <section class="title-and-tags">
 
   <section class="tag-container">
-    {% assign links = site.pages | sort: 'title' %}
+    {% assign links = site.pages | sort: 'order' %}
     {% for link in links %}
     {% if link.tag %}
     <a href="{{ link.url | absolute_url }}"

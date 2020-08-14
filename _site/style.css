@@ -30,9 +30,8 @@ main {
   width: 100%;
   max-width: 780px;
   padding: 0 20px;
-  margin: 0 auto;
   background-color: transparent;
-  margin: 60px auto;
+  margin: 46px auto;
 }
 
 .track-page main {
@@ -174,6 +173,9 @@ header.full-width .split-buttons {
   flex-wrap: wrap;
   justify-content: flex-start;
   margin-bottom: 20px;
+  padding: 10px 0;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
 }
 
 .tag-container .tag {
@@ -351,7 +353,7 @@ a,
 }
 
 h1 {
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   font-weight: 500;
   line-height: 1;
   text-align: center;
@@ -367,11 +369,14 @@ header h1 {
 }
 
 .title-and-tags h1 {
-  width: 50%;
-  font-weight: 600;
-  line-height: 1;
-  margin: 0;
+  background-color: white;
+  padding-left: 12px;
+  border: 1px solid lightgray;
+  color: black;
   text-align: left;
+  font-weight: 600;
+  line-height: 2;
+  margin: 0;
 }
 
 h2 {
@@ -441,7 +446,7 @@ button.tag {
   }
 
   h1 {
-    font-size: 2vw;
+    font-size: 1.8vw;
   }
 
   .title-and-tags {
