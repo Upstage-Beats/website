@@ -163,25 +163,26 @@ header.full-width .split-buttons {
 
 .title-and-tags {
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  flex-direction: column;
 }
 
 .tag-container {
-  width: 270px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
+  margin-bottom: 20px;
 }
 
 .tag-container .tag {
-  min-height: 30px;
-  width: 120px;
+  min-height: 26px;
+  width: 92px;
   background-color: white;
   font-style: italic;
   padding: 0;
+  margin: 0 4px 2px 0;
   border: 1px solid lightgray;
   flex-grow: 1;
   transition: .2s ease-in-out;
@@ -402,6 +403,10 @@ button {
   cursor: pointer;
 }
 
+button.tag {
+  font-size: 10px;
+}
+
 .page-footer p,
 .page-footer a {
   font-size: 13px;
@@ -590,20 +595,18 @@ button {
 
   .title-and-tags h1 {
     width: 100%;
-    margin-bottom: 10px;
+    margin: -10px 0;
     text-align: center;
   }
 
   .tag-container {
-    width: 250px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+      display: flex;
+      justify-content: space-between;
+    }
 
   .tag-container .tag {
-    min-height: 30px;
-    width: 120px;
+    width: calc(25vw - 8px);
+    margin-right: 0;
     background-color: white;
     font-style: italic;
     padding: 0;

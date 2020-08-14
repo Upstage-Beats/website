@@ -4,10 +4,8 @@
 
   <section class="title-and-tags">
 
-  <h1>{{ page.tag }}</h1>
-
   <section class="tag-container">
-    {% assign links = site.pages %}
+    {% assign links = site.pages | sort: 'title' %}
     {% for link in links %}
     {% if link.tag %}
     <a href="{{ link.url | absolute_url }}"
@@ -17,6 +15,8 @@
     {% endif %}
     {% endfor %}
   </section>
+
+    <h1>{{ page.tag }}</h1>
 
   </section>
 
