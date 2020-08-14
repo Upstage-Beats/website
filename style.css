@@ -174,8 +174,6 @@ header.full-width .split-buttons {
   justify-content: flex-start;
   margin-bottom: 20px;
   padding: 10px 0;
-  border-top: 1px solid lightgray;
-  border-bottom: 1px solid lightgray;
 }
 
 .tag-container .tag {
@@ -450,7 +448,7 @@ button.tag {
   }
 
   .title-and-tags {
-    margin-top: 60px;
+    margin-top: 20px;
   }
 
 }
@@ -548,6 +546,12 @@ button.tag {
 
   .title-and-tags {
     margin: 20px 0;
+  }
+
+  .tag-container {
+
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
   }
 
   .sample {

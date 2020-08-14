@@ -12,7 +12,7 @@
     <a href="/#/cart">Cart</a>
     {% assign links = site.pages | sort: "order" %}
     {% for link in links %}
-    {% if link.order %}
+    {% if link.nav %}
     <a href="{{ link.url | absolute_url }}" class="{% if link.url  == page.url %}active{% endif %}">
       {{ link.title }}
     </a>
