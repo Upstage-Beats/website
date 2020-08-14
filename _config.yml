@@ -1,5 +1,5 @@
 title: "Numerow"
-baseurl: "https://upstagebeats.com"
+baseurl: ""
 url: "https://upstagebeats.com"
 
 permalink: "/:categories/:year/:month/:day/:title:output_ext"
