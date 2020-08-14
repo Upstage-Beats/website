@@ -3,11 +3,27 @@ label: Import Template
 hide_body: true
 fields:
 - name: tags
-  type: tag_list
-  default:
-  - All Tracks
+  type: select
+  default: ''
+  config:
+    required: true
+    options:
+    - Rap
+    - Trap
+    - Alternative
+    - Drill
+    - Club/Dance
+    - Dancehall
+    - Lo-Fi
+    - RnB
+    - Old School
+    - New Wave
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
   label: Tags
-  description: Tags
 - type: textarea
   name: sample-embed
   label: sample-embed
