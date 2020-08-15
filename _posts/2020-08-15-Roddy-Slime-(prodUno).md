@@ -5,8 +5,9 @@ tags:
 - Trap
 - Rap
 layout: post
-sample-embed: '<iframe style="border: 0; width: 400px; height: 406px;" src="https://bandcamp.com/EmbeddedPlayer/album=3424510307/size=large/bgcol=ffffff/linkcol=0687f5/artwork=none/track=215376352/transparent=true/"
-  seamless><a href="http://upstagebeats.bandcamp.com/album/24karat">24Karat by UpstageBeats</a></iframe>'
+sample-embed: '<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=1153548464/size=small/bgcol=ffffff/linkcol=333333/artwork=none/track=3982026860/transparent=true/"
+  seamless><a href="http://upstagebeats.bandcamp.com/album/roddy-slime">Roddy Slime
+  by UpstageBeats</a></iframe>'
 mp3-name: Roddy Slime (prod. Uno)
 mp3-price: 25
 mp3-description: MP3 Lease
