@@ -10,7 +10,7 @@
 
   <div class="bottom">
     <div class="sample">
-      {{ post.sample-embed }}
+      <iframe style="border: 0; width: 400px; height: 208px;" src="https://bandcamp.com/EmbeddedPlayer/album={{ post.sample-embed-album-id }}/size=large/bgcol=ffffff/linkcol=333333/artwork=none/transparent=true/" seamless></iframe>
     </div>
     <div class="button-row">
       <button class="snipcart-add-item" data-item-id="{{ post.mp3-id }}" data-item-price="25" data-item-url="/" data-item-description="{{ post.track-description }}" data-item-name="{{ post.track-name }} – MP3"
