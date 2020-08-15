@@ -41,4 +41,4 @@ fields:
   default: post
   description: Do not change or delete
 pages:
-- _posts/2020-08-15-roddy-slime.md
+- _posts/roddy-slime.md
