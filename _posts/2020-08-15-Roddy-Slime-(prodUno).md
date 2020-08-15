@@ -5,7 +5,7 @@ tags:
 - Trap
 - Rap
 layout: post
-sample-embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1153548464/size=large/bgcol=ffffff/linkcol=333333/tracklist=false/artwork=none/transparent=true/"
+sample-embed: '<iframe style="border: 0; width: 400px; height: 208px;" src="https://bandcamp.com/EmbeddedPlayer/album=1153548464/size=large/bgcol=ffffff/linkcol=0687f5/artwork=none/transparent=true/"
   seamless><a href="http://upstagebeats.bandcamp.com/album/roddy-slime">Roddy Slime
   by UpstageBeats</a></iframe>'
 mp3-name: Roddy Slime (prod. Uno)
