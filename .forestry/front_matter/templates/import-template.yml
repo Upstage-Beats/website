@@ -12,7 +12,7 @@ fields:
   label: Track Name
 - type: textarea
   name: sample-embed
-  label: sample-embed
+  label: sample-embed-album-id
 - type: text
   name: track-description
   label: Description
