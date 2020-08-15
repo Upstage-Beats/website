@@ -7,18 +7,15 @@ fields:
   default:
   - All Beats
   label: tags
+- type: text
+  name: track-name
+  label: Track Name
 - type: textarea
   name: sample-embed
   label: sample-embed
 - type: text
-  name: mp3-name
-  label: mp3-name
-- type: number
-  name: mp3-price
-  label: mp3-price
-- type: text
-  name: mp3-description
-  label: mp3-description
+  name: track-description
+  label: Description
 - type: text
   name: mp3-id
   label: mp3-id
@@ -28,23 +25,8 @@ fields:
     required: false
   label: mp3-guid
 - type: text
-  name: mp3-url
-  label: mp3-url
-- type: text
-  name: wav-name
-  label: wav-name
-- type: number
-  name: wav-price
-  label: wav-price
-- type: text
-  name: wav-description
-  label: wav-description
-- type: text
   name: wav-id
   label: wav-id
-- type: text
-  name: wav-url
-  label: wav-url
 - name: wav-guid
   type: text
   config:
