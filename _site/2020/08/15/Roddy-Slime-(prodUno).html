@@ -37,7 +37,7 @@
 </head>
 
 
-<body>
+<body class="track-page">
 
   <header class="dropdown">
 
@@ -60,11 +60,13 @@
     
     
     
-    
-    
     <a href="http://localhost:4000/about.html" class="">
       About
     </a>
+    
+    
+    
+    
     
     
     
@@ -78,9 +80,6 @@
     
     
     
-    <a href="http://localhost:4000/contact.html" class="active">
-      Contact
-    </a>
     
     
     
@@ -96,11 +95,7 @@
     
     
     
-    
-    
-    
-    
-    
+    <a href="mailto:upstage.beats@gmail.com">Contact</a>
     <br>
 
   </div>
@@ -122,31 +117,48 @@
   </div>
   <div class="split-buttons">
     <button><a href="/#/cart">Cart</a></button>
-    <button><a href="/contact.html">Contact</a></button>
+    <button><a href="mailto:upstage.beats@gmail.com">Contact</a></button>
   </div>
 
 </header>
 
 
+
   <main>
 
-<h1>Contact</h1>
+    <div class="track-section">
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim enim sit amet venenatis urna cursus eget nunc scelerisque. Neque ornare aenean euismod elementum nisi quis
-  eleifend quam adipiscing. Luctus accumsan tortor posuere ac ut consequat semper. Quis viverra nibh cras pulvinar mattis nunc sed. Semper risus in hendrerit gravida. Nunc sed blandit libero volutpat. Nibh ipsum consequat nisl vel pretium.
-  Curabitur vitae nunc sed velit dignissim sodales ut eu sem. Vel fringilla est ullamcorper eget. Sit amet porttitor eget dolor. Massa tempor nec feugiat nisl pretium fusce id velit ut. Habitant morbi tristique senectus et netus et malesuada fames.
-  Aenean et tortor at risus viverra. Convallis posuere morbi leo urna molestie. Non quam lacus suspendisse faucibus interdum. Aliquam eleifend mi in nulla posuere sollicitudin. Facilisis magna etiam tempor orci.</p>
+      <a href="/index.html">
+        <button>View all tracks<img src="/images/arrow.svg"></button>
+      </a>
 
-<p>Lobortis elementum nibh tellus molestie nunc non blandit massa. Commodo ullamcorper a lacus vestibulum. Vitae proin sagittis nisl rhoncus mattis. Sit amet risus nullam eget felis eget nunc. Quam elementum pulvinar etiam non quam lacus. Nascetur
-  ridiculus mus mauris vitae. Ultrices vitae auctor eu augue ut. Vitae suscipit tellus mauris a diam. Ipsum dolor sit amet consectetur adipiscing elit. Non pulvinar neque laoreet suspendisse interdum consectetur libero. Porttitor massa id neque
-  aliquam vestibulum. Aliquam etiam erat velit scelerisque in dictum non. Auctor elit sed vulputate mi. Enim sed faucibus turpis in eu mi. Amet consectetur adipiscing elit pellentesque habitant morbi tristique senectus. Id aliquet lectus proin nibh
-  nisl condimentum id venenatis. Eros donec ac odio tempor orci dapibus. Aliquet eget sit amet tellus cras.</p>
+      <div class="top">
+        <h4>Roddy Slime (prod. Uno)</h4>
+        <div></div>
+      </div>
 
-<p>Sit amet facilisis magna etiam tempor orci. Lectus quam id leo in vitae turpis massa. Et netus et malesuada fames ac turpis egestas maecenas. Sit amet volutpat consequat mauris nunc congue. Vulputate sapien nec sagittis aliquam. Ipsum consequat
-  nisl vel pretium lectus quam id. Ac ut consequat semper viverra nam libero justo laoreet sit. Ornare arcu odio ut sem nulla pharetra diam sit amet. Aliquet risus feugiat in ante metus dictum at. Aliquam sem fringilla ut morbi tincidunt augue
-  interdum velit.</p>
+      <div class="bottom">
 
-</main>
+        <div class="sample">
+          <iframe style="border: 0; width: 400px; height: 208px;" src="https://bandcamp.com/EmbeddedPlayer/album=1153548464/size=large/bgcol=ffffff/linkcol=0687f5/artwork=none/transparent=true/" seamless><a href="http://upstagebeats.bandcamp.com/album/roddy-slime">Roddy Slime by UpstageBeats</a></iframe>
+        </div>
+
+        <div class="button-row">
+          <button class="snipcart-add-item" data-item-id="Roddy Slime (prod. Uno)" data-item-price="25" data-item-url="/" data-item-description="MP3 Lease" data-item-name="Roddy Slime (prod. Uno)"
+            data-item-file-guid="1948ea1c-20ab-490c-973a-cc8d21288350" data-item-max-quantity="1">
+            Buy .mp3
+          </button>
+          <button class="snipcart-add-item" data-item-id="Roddy Slime (prod. Uno) - WAV" data-item-price="50" data-item-url="/" data-item-description="WAV lease" data-item-name="Roddy Slime (prod. Uno) - WAV"
+            data-item-file-guid="b1fcf65f-1307-41c6-9a2e-550ecf373ccf" data-item-max-quantity="1">
+            Buy .wav
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
 
 
   <section class="page-footer">
@@ -173,6 +185,10 @@
 
 <script defer async src="https://cdn.snipcart.com/themes/v3.0.19/default/snipcart.js"></script>
 
+
+  <div id="snipcart" data-api-key="MmQ5Yjg0ZjEtMDRmMy00ODIxLTlhN2YtNzUyNDBiZjljNjdlNjM3MzAwOTE3Njc1MjY5NjQ5" hidden></div>
+
+  <script src="https://cdn.snipcart.com/themes/v3.0.19/default/snipcart.js"></script>
 
 </body>
 
