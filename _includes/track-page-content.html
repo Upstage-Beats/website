@@ -25,32 +25,7 @@
     {% for post in site.posts %}
     {% if post.tags contains page.tag %}
 
-    <div class="track-section">
-      <div class="top">
-        <h4>{{ post.track-name }}</h4>
-
-        <div class="top-right">
-          <input value="upstagebeats.com{{ post.url }}"></input>
-          <div class="post-share"></div>
-        </div>
-      </div>
-
-      <div class="bottom">
-        <div class="sample">
-          {{ post.sample-embed }}
-        </div>
-        <div class="button-row">
-          <button class="snipcart-add-item" data-item-id="{{ post.mp3-id }}" data-item-price="25" data-item-url="/" data-item-description="{{ post.track-description }}" data-item-name="{{ post.track-name }}--MP3"
-            data-item-file-guid="{{ post.mp3-guid }}" data-item-max-quantity="1">
-            Buy .mp3
-          </button>
-          <button class="snipcart-add-item" data-item-id="{{ post.wav-id }}" data-item-price="50" data-item-url="/" data-item-description="{{ post.track-description }}" data-item-name="{{ post.track-name }}--WAV"
-            data-item-file-guid="{{ post.wav-guid }}" data-item-max-quantity="1">
-            Buy .wav
-          </button>
-        </div>
-      </div>
-    </div>
+    {% include track-listing.html %}
 
     {% endif %}
     {% endfor %}
