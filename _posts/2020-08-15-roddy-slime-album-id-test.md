@@ -1,6 +1,9 @@
 ---
 tags:
 - All Beats
+- Rap
+- Trap
+- New Beats
 layout: post
 track-name: Slime [prod. Uno]
 sample-embed: "1153548464"
