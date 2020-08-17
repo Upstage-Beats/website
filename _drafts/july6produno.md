@@ -1,0 +1,16 @@
+---
+tags:
+- All Beats
+- New Wave
+- Trap
+- New Beats
+layout: post
+track-name: July 6 (prod. Uno)
+sample-embed: "745845777"
+track-description: July 6 (prod. Uno)
+mp3-id: "/"
+mp3-guid: ea5cf708-94dc-419b-a564-9f757055a2f2
+wav-id: "/"
+wav-guid: 437b917a-f324-41f9-b11a-971fcf9944de
+
+---
