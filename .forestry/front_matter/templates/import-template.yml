@@ -16,17 +16,11 @@ fields:
 - type: text
   name: track-description
   label: Description
-- type: text
-  name: mp3-id
-  label: mp3-id
 - name: mp3-guid
   type: text
   config:
     required: false
   label: mp3-guid
-- type: text
-  name: wav-id
-  label: wav-id
 - name: wav-guid
   type: text
   config:
