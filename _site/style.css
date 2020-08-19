@@ -178,11 +178,11 @@ header.full-width .split-buttons {
 
 .tag-container .tag {
   min-height: 26px;
-  width: min(110px, 15vw);
+  width: min(119.5px, 15vw);
   background-color: white;
   font-style: italic;
   padding: 0;
-  margin: 0 0 4px 0;
+  margin: 0 0 3px 0;
   border: 1px solid lightgray;
   flex-grow: 1;
   transition: .2s ease-in-out;
