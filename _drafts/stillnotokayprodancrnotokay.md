@@ -1,6 +1,9 @@
 ---
 tags:
 - All Beats
+- Alternative
+- Lo-Fi
+- New Beats
 layout: post
 track-name: Still Not Okay (prod. Ancrnotokay)
 sample-embed: "4073323404"
