@@ -3,7 +3,6 @@ tags:
 - All Beats
 - New Wave
 - Trap
-- New Beats
 layout: post
 track-name: July 6 (prod. Uno)
 sample-embed: "745845777"
