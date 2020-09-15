@@ -1,7 +1,6 @@
 ---
 tags:
 - All Beats
-- New Beats
 - Dancehall
 - Club/Dance
 - Rap
