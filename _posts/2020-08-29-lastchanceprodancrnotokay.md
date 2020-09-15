@@ -2,7 +2,6 @@
 tags:
 - All Beats
 - New Wave
-- New Beats
 - Trap
 layout: post
 track-name: Last Chance (prod. ancrnotokay)
