@@ -1,6 +1,9 @@
 ---
 tags:
 - All Beats
+- New Beats
+- Alternative
+- Lo-Fi
 layout: post
 track-name: Nothing (prod. Ancrnotokay)
 sample-embed: "2162373509"
