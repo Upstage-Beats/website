@@ -1,7 +1,6 @@
 ---
 tags:
 - All Beats
-- New Beats
 - New Wave
 - Trap
 - Lo-Fi
