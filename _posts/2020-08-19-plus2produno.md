@@ -3,7 +3,6 @@ tags:
 - All Beats
 - Dancehall
 - Club/Dance
-- Rap
 layout: post
 track-name: "+2 (prod. Uno)"
 sample-embed: "2111026212"
