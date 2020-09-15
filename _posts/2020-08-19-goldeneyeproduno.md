@@ -3,7 +3,6 @@ tags:
 - All Beats
 - Trap
 - Rap
-- New Beats
 layout: post
 track-name: Goldeneye (prod. Uno)
 sample-embed: "1576623668"
