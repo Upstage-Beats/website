@@ -1,6 +1,7 @@
 ---
 tags:
 - All Beats
+- alternative
 layout: post
 track-name: smyle (prod. ancrnotokay)
 sample-embed: "89629804"
