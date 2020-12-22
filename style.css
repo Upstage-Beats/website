@@ -786,12 +786,15 @@ button.tag {
   border-top: 1px dashed;
   margin-top: 6px;
   padding: 20px 0 0 0;
+
+  display: flex;
+  flex-direction: column;
+  
 }
 
 .snipcart-cart__footer-col {
   min-width: 100%;
   max-width: 100%;
-  display: block;
 }
 
 .snipcart-cart-summary-fees__notice.snipcart__font--regular {
