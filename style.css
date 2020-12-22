@@ -683,6 +683,7 @@ button.tag {
 
 .snipcart-cart__footer-col.cart__footer-discount-box.snipcart-cart__actions {
   display: block;
+  margin-bottom: 16px;
 }
 
 .snipcart-cart-header {
