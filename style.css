@@ -682,7 +682,7 @@ button.tag {
 }
 
 .snipcart-cart__footer-col.cart__footer-discount-box.snipcart-cart__actions {
-  display: ;
+  display: block;
 }
 
 .snipcart-cart-header {
@@ -790,6 +790,7 @@ button.tag {
 
 .snipcart-cart__footer-col {
   min-width: 100%;
+  display: block;
 }
 
 .snipcart-cart-summary-fees__notice.snipcart__font--regular {
