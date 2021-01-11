@@ -786,11 +786,15 @@ button.tag {
   border-top: 1px dashed;
   margin-top: 6px;
   padding: 20px 0 0 0;
+
+  display: flex;
+  flex-direction: column;
+
 }
 
 .snipcart-cart__footer-col {
   min-width: 100%;
-  display: block;
+  max-width: 100%;
 }
 
 .snipcart-cart-summary-fees__notice.snipcart__font--regular {
@@ -838,6 +842,11 @@ footer {
     flex-grow: 1;
     margin: 0 -80px;
   }
+
+  .snipcart-cart__footer-col.cart__footer-discount-box.snipcart-cart__actions {
+    margin-bottom: 16px;
+  }
+
 }
 
 .snipcart-cart-summary-fees__notice.snipcart__font--regular,

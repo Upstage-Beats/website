@@ -8,3 +8,7 @@ permalink: "/:categories/:year/:month/:day/:title:output_ext"
 theme: minima
 plugins:
   - jekyll-feed
+
+
+# Server Config options
+livereload: true
