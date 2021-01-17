@@ -1,7 +1,6 @@
 ---
 tags:
 - All Beats
-- New Beats
 layout: post
 track-name: Coarse (prod. ancrnotokay)
 sample-embed: "3822810957"
