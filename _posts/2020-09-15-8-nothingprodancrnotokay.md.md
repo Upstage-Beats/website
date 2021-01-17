@@ -1,7 +1,6 @@
 ---
 tags:
 - All Beats
-- New Beats
 - Alternative
 - Lo-Fi
 layout: post
