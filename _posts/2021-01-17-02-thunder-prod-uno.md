@@ -3,6 +3,7 @@ tags:
 - All Beats
 - Trap
 - Rap
+- New Beats
 layout: post
 track-name: Thunder (prod. Uno)
 sample-embed: "783747969"
