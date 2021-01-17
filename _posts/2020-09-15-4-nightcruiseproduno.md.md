@@ -3,7 +3,6 @@ tags:
 - All Beats
 - New Wave
 - Trap
-- New Beats
 layout: post
 track-name: Night Cruise (prod. Uno)
 sample-embed: "85348910"

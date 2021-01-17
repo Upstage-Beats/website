@@ -3,7 +3,6 @@ tags:
 - All Beats
 - Lo-Fi
 - Alternative
-- New Beats
 layout: post
 track-name: Bad Things (prod. Ancrnotokay)
 sample-embed: "4031731236"
