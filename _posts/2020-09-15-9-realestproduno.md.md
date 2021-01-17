@@ -4,7 +4,6 @@ tags:
 - Rap
 - Old School
 - Trap
-- New Beats
 layout: post
 track-name: Realest (prod. Uno)
 sample-embed: "2752262390"

@@ -4,7 +4,6 @@ tags:
 - New Wave
 - Dancehall
 - Trap
-- New Beats
 layout: post
 track-name: Twitch Master (prod. Ancrnotokay)
 sample-embed: "1502494636"
