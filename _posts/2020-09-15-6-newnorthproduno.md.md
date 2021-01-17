@@ -3,7 +3,6 @@ tags:
 - All Beats
 - Trap
 - New Wave
-- New Beats
 layout: post
 track-name: New North (prod. Uno)
 sample-embed: "3402733531"
