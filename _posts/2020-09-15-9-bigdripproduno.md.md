@@ -3,7 +3,6 @@ tags:
 - All Beats
 - Trap
 - New Wave
-- New Beats
 layout: post
 track-name: Big Drip (prod. Uno)
 sample-embed: "544230935"
