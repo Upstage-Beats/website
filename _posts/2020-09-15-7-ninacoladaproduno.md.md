@@ -4,7 +4,6 @@ tags:
 - Trap
 - Rap
 - New Wave
-- New Beats
 layout: post
 track-name: Nina Colada (prod. Uno)
 sample-embed: "538245629"
