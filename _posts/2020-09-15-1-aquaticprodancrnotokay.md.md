@@ -3,7 +3,6 @@ tags:
 - All Beats
 - New Wave
 - Club/Dance
-- New Beats
 layout: post
 track-name: Aquatic (prod. Ancrnotokay)
 sample-embed: "1828888416"
