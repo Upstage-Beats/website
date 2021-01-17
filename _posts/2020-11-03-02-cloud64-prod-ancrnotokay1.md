@@ -1,7 +1,6 @@
 ---
 tags:
 - All Beats
-- New Beats
 layout: post
 track-name: cloud64 (prod. ancrnotokay)
 sample-embed: "3590704768"
