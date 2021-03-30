@@ -130,7 +130,7 @@
 
       <div class="track-section">
         <div class="top">
-          <h4>omg!</h4>
+          <h4>omg! (prod. ancrnotokay)</h4>
 
         </div>
 
@@ -142,11 +142,11 @@
 
             <button
             class="snipcart-add-item"
-            data-item-id="omg! - MP3"
+            data-item-id="omg! (prod. ancrnotokay) - MP3"
             data-item-price="25"
             data-item-url="/2020/11/25/omg-prod-ancrnotokay.html"
             data-item-description="omg! (prod. ancrnotokay)"
-            data-item-name="omg! – MP3"
+            data-item-name="omg! (prod. ancrnotokay) – MP3"
             data-item-file-guid="9863ea41-71ef-4850-ae41-273d68612e7b"
             data-item-max-quantity="1">
               Buy .mp3
@@ -154,11 +154,11 @@
 
             <button
             class="snipcart-add-item"
-            data-item-id="omg! - WAV"
+            data-item-id="omg! (prod. ancrnotokay) - WAV"
             data-item-price="50"
             data-item-url="/2020/11/25/omg-prod-ancrnotokay.html"
             data-item-description="omg! (prod. ancrnotokay)"
-            data-item-name="omg! – WAV"
+            data-item-name="omg! (prod. ancrnotokay) – WAV"
             data-item-file-guid="8feef90c-8dad-4b6a-a579-c71cd2f80e18"
             data-item-max-quantity="1">
               Buy .wav
@@ -195,6 +195,18 @@
 <div id="snipcart" data-api-key="ODcyNGQyMjMtN2U0OC00OWQ2LWE5YWQtYThjNjRkZWQyN2I4NjM3MzAwOTE3Njc1MjY5NjQ5" hidden></div>
 
 <script defer async src="https://cdn.snipcart.com/themes/v3.0.27/default/snipcart.js"></script>
+
+
+
+
+document.addEventListener('play', function(e){
+    var allAudios = document.getElementsByClassName('tinyplayer item');
+    for(var i = 0; i<allAudios.length; i++){
+        if(allAudios[i] != e.target){
+            allAudios[i].pause();
+        }
+    }
+}, true);
 
 
 </body>

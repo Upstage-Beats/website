@@ -264,6 +264,14 @@
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
 
     <div class="track-section">
   <div class="top">
@@ -403,6 +411,18 @@
 <div id="snipcart" data-api-key="ODcyNGQyMjMtN2U0OC00OWQ2LWE5YWQtYThjNjRkZWQyN2I4NjM3MzAwOTE3Njc1MjY5NjQ5" hidden></div>
 
 <script defer async src="https://cdn.snipcart.com/themes/v3.0.27/default/snipcart.js"></script>
+
+
+
+
+document.addEventListener('play', function(e){
+    var allAudios = document.getElementsByClassName('tinyplayer item');
+    for(var i = 0; i<allAudios.length; i++){
+        if(allAudios[i] != e.target){
+            allAudios[i].pause();
+        }
+    }
+}, true);
 
 
 </body>
