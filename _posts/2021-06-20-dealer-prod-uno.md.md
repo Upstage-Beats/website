@@ -3,6 +3,7 @@ tags:
 - All Beats
 - New Wave
 - Trap
+- New Beats
 layout: post
 track-name: Dealer [prod. Uno]
 sample-embed: "1252013197"
